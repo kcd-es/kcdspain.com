@@ -1,0 +1,61 @@
+baseurl = "https://kcdspain.com/"
+title = "KCD Spain"
+theme = "vncnt-hugo"
+disableRSS = true
+enableRobotsTXT = true
+editor = "vim"
+languageCode = "es"
+language = "es"
+
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+
+googleAnalytics = "G-NBJ24KLFN1"
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+
+[params]
+  author = "KCD Spain"
+  email = "hello@kcdspain.com"
+  description = "KCD Spain"
+  bio = """
+Kubernetes Community Days Spain es un evento gratuito virtual pensado para reunir a todas personas interesadas en las tecnologías de la CNCF (no solo Kubernetes!) & Open Source.  """
+  avatar = "img/logo.png"
+  favicon = "img/favicon.ico"
+  error404 = "There is no such page."
+
+  [params.contact]
+    github = "https://github.com/kcd-es"
+    twitter = "https://twitter.com/kcdspain"
+    telegram = "https://t.me/KCDes"
+    linkedin = "https://www.linkedin.com/company/kcdspain"
+    slack = "https://cloud-native.slack.com/archives/CUFASEGCU"
+
+  [params.card]
+    twitter_card = "summary_large_image"
+    twitter_site = "@KCDSpain"
+    twitter_creator = "@raelga"
+    og_site_name = "KCD Spain"
+    og_url = "https://kcdspain.com/"
+    og_title = "Kubernetes Community Days Spain"
+    og_description = "Kubernetes Community Days Spain es un evento gratuito virtual pensado para reunir a todas personas interesadas en las tecnologías de la CNCF (no solo Kubernetes!) & Open Source."
+    og_image = "https://kcdspain.om/img/card.png"
+    twitter_image = "https://kcdspain.com/img/card.png"
+    og_locale = "es-es"
